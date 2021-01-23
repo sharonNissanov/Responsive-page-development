@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+    /* small screens */
+    ul#collaborations , #help, #the-company  {display: none;}
+    #navbar-big-screen{display: none;}
+    /* .progress{
+        width: 300px;
+    } */
+
+  }
+  
+  @media (min-width: 769px) {
+    .plus_button{display: none;}
+    .navbar-small-screen{display: none;}
+    button#plus_button1 ,#plus_button2 ,#plus_button3{display: none;}
+
+    /* #sdarot_grades{display: none;} */
+  }
+
+/* .list-group-item{
+    background-color: black;
+    color: blue;
+
+} */
+
+#bar{
+    height: 13px; width: 200px; background-color: rgb(151, 150, 150);
+}
+
+li a { display: block; margin:0 0 10px 0;     }
+li a:visited { color: #C6C4C4; }
+
+button#plus_button1 ,#plus_button2 ,#plus_button3{
+    background-color: transparent; 
+    color:  #C6C4C4;
+    border: none;  margin: 0;
+    float: left;
+}
+
+#navbar-small-screen{
+    /* display: flex; flex-direction: row;margin: 0; padding: 0; */
+
+}
+
+nav .navbar-nav li a{
+    color: black !important ;font-size:15px; padding: 0; margin: 0 20px; 
+}
+nav .navbar-nav {    
+    display: flex; flex-direction: row;
+}
+.fa-user-circle-o{ margin-right: 15px; padding: 0;
+    /* display: flex; flex-direction: row; */
+}
+.fa-question-circle{margin-right: 15px; padding: 0;}
+
+#second-link{margin-right: 15px; padding: 0;}
