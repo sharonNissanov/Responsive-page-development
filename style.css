@@ -2,18 +2,31 @@
     /* small screens */
     ul#collaborations , #help, #the-company  {display: none;}
     #navbar-big-screen{display: none;}
-    /* .progress{
-        width: 300px;
-    } */
+    #info_sdarot_big_screen{display: none;}
+   #subject-headline.fa-check:before{font-size: 20px; border: none;}
+   /* #btn_big_screen{display: none;} */
 
   }
   
   @media (min-width: 769px) {
+      /* big screens */
     .plus_button{display: none;}
     .navbar-small-screen{display: none;}
     button#plus_button1 ,#plus_button2 ,#plus_button3{display: none;}
-
+    #subject-headline.fa-check:before{font-size: 40px;}
+    #info_sdarot_small_screen{display: none;}
+    /* #btn_small_screen{display: none;} */
+    
   }
+
+ @media (max-width:450px) {
+    #btn_big_screen{display: none;}
+}
+
+@media (min-width: 451px) {
+    #btn_small_screen{display: none;}  
+} 
+
 
 #bar{
     height: 13px; width: 200px; background-color: rgb(151, 150, 150);
@@ -28,11 +41,9 @@ button#plus_button1 ,#plus_button2 ,#plus_button3{
     border: none;  margin: 0;
     float: left;
 }
-
-#navbar-small-screen{
-    /* display: flex; flex-direction: row;margin: 0; padding: 0; */
-
-}
+/* #subject-headline.fa-check:before{
+    font-size: 10px;
+} */
 
 nav .navbar-nav li a{
     color: black !important ;font-size:15px; padding: 0; margin: 0 20px; 

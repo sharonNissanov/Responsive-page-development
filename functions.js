@@ -1,6 +1,6 @@
 "use strict";
 var opened_footer_rows = {row1Opened: false,row2Opened: false,row3Opened: false};
-var is_list_open = {sdarot: true};
+var is_list_open = {sdarot: true , kamuti: true};
 
 function showFooterLinks(id){
     var listID =document.getElementById(id);
@@ -26,10 +26,13 @@ function open_close_tests_list(list_name){
     var listID =document.getElementById(list_name);
     if( list_name == "sdarot_list"){
         is_list_open.sdarot ? document.getElementById("open_icon_sdarot").className = "fa fa-chevron-down fa-1x" : document.getElementById("open_icon_sdarot").className = "fa fa-chevron-left fa-1x"  ;
-
          is_list_open.sdarot = !is_list_open.sdarot;
     }
-    //console.log(listID)
+    if( list_name == "kamuti_list"){
+        is_list_open.kamuti ? document.getElementById("open_icon_kamuti").className = "fa fa-chevron-down fa-1x" : document.getElementById("open_icon_kamuti").className = "fa fa-chevron-left fa-1x"  ;
+         is_list_open.kamuti = !is_list_open.kamuti;
+    }
+
     if(listID.style.display == "block")
         listID.style.display= "none";
     else

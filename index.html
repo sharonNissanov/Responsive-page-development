@@ -72,10 +72,7 @@
     </div>
   </div>
 
-
-
   <!------main page------------------------------->
-
 
   <div class="jumbotron bg-white mr-md-5" style="margin: 0; padding:20px;  direction: rtl; text-align: right;">
 
@@ -97,36 +94,39 @@
         </div>
 
 
-        <div class="jumbotron bg-white" style="margin: 10px; padding: 10px ; font-size: 20px; ">
-          <h5 class="font-weight-bold">מבחנים כלולים בפרק זה: </h5>
+  <div class="jumbotron bg-white" style="margin: 10px; padding: 10px ; font-size: 20px; ">
+        <h5 class="font-weight-bold">מבחנים כלולים בפרק זה: </h5>
 
-          <div
-            class="row border border-dark border-right-0 border-top-0 border-left-0 d-flex align-items-center p-0 m-0 pb-2">
-            <div class="col" onclick="open_close_tests_list('sdarot_list')">
-              <span
-                style=" border-style: dashed solid solid dashed; border-width: 3px; border-radius: 35px; color: green;"
-                class="fa fa-check fa-2x " aria-hidden="true"></span>
-              <span class="font-weight-bold h4"> סדרות </span>
-              <span id="open_icon_sdarot" class="fa fa-chevron-down fa-1x" aria-hidden="true" style="display: inline;">
-              </span>
-            </div>
-            <span class="col h6  text-left"> תרגלת 2/6 מבחנים </span>
-          </div>
-
+        <div class="row border border-dark border-right-0 border-top-0 border-left-0 align-items-center p-0 m-0  p-0 m-0 pb-2"
+        onclick="open_close_tests_list('sdarot_list')" >
+          <span
+          id="subject-headline"
+          style=" border-style: dashed solid solid dashed; border-width: 3px; border-radius: 35px; color: green;"
+          class="fa fa-check " aria-hidden="true"></span>
+          <span class="font-weight-bold h4 pr-1 pl-1" > סדרות </span>
+          <span id="open_icon_sdarot" class="fa fa-chevron-down fa-1x" aria-hidden="true" style="display: inline;"> </span>
+          <br>
+          <span id = "info_sdarot_big_screen"class="col h6 align-self-end text-md-left"> תרגלת 2/6 מבחנים </span>
+          <span id = "info_sdarot_small_screen" class="col-12 pl-5 p-0 m-0 h6">תרגלת 2/6 מבחנים </span>
+      </div>
+    
           <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
 
       <div id="sdarot_list">  
-          <div
-            class="row border border-dark border-right-0 border-top-0 border-left-0  p-0 m-0 pb-4 pt-md-4 pr-md-4 pl-md-3"
+          <div class="row border border-dark border-right-0 border-top-0 border-left-0  p-0 m-0 pb-4 pt-md-4 pr-md-4 pl-md-3"
             style="display: flex; justify-content: space-between;">
-            <span> <i class="fa fa-play p-md-1" aria-hidden="true"
+            <span> <i class="fa fa-play p-1" aria-hidden="true"
                 style="border: 3px solid green; color: green; border-radius: 6px; "></i> וידאו הדרכה 2</span>
-            <button type="button" class="btn btn-danger " style="width: 100px">לצפייה</button>
+            <button  id="btn_big_screen" type="button" class="btn btn-danger " style="width: 100px">לצפייה</button>
+            <div class="row p-0 m-0" id="btn_small_screen" > <button  type="button" class= "btn btn-danger p-0 m-0  " style="width: 200px">לצפייה</button>  </div>
+            
+
           </div>
-          <div
-            class="row border border-dark border-right-0 border-top-0 border-left-0  p-0 m-0 pb-4 pt-md-4 pr-md-4 pl-md-3"
+
+
+          <div class="row border border-dark border-right-0 border-top-0 border-left-0  p-0 m-0 pb-4 pt-md-4 pr-md-4 pl-md-3"
             style="display: flex; justify-content: space-between;">
-            <span> <i class="fa fa-play p-md-1" aria-hidden="true"
+            <span> <i class="fa fa-play p-1" aria-hidden="true"
                 style="border: 3px solid green; color: green; border-radius: 6px; "></i> וידאו הדרכה 2</span>
             <button type="button" class="btn btn-danger " style="width: 100px">לצפייה</button>
           </div>
@@ -315,21 +315,53 @@
           </div>
     </div> 
 <!-- end of alredy done rows / grey rows // end od all sdarot list----------------------->
-    <div
-      class="row border border-dark border-right-0 border-top-0 border-left-0 d-flex align-items-center p-0 m-0 pb-2 pt-md-4">
-        <div class="col">
-          <span
-            style=" border-style: dashed solid solid dashed; border-width: 3px; border-radius: 35px; color: green;"
-            class="fa fa-check fa-2x " aria-hidden="true"></span>
-          <span class="font-weight-bold h4"> הסקה כמותית </span>
-          <span class="fa fa-chevron-left fa-1x" aria-hidden="true" style="display: inline;">
-          </span>
+        <div class="row border border-dark border-right-0 border-top-0 border-left-0 d-flex align-items-center p-0 m-0 pb-2 pt-md-4"
+          onclick="open_close_tests_list('kamuti_list')">
+              <span
+                id="subject-headline"
+                style=" border-style: dashed solid solid dashed; border-width: 3px; border-radius: 35px; color: green;"
+                class="fa fa-check" aria-hidden="true"></span>
+              <span class="font-weight-bold h4 pr-1 pl-1" > הסקה כמותית </span>
+              <span id="open_icon_kamuti" class="fa fa-chevron-left fa-1x" aria-hidden="true" style="display: inline;">
+              </span>
+  
+            <span id = "info_sdarot_big_screen"class="col h6 align-self-end text-md-left"> תרגלת 8/8 מבחנים </span>
+            <span id = "info_sdarot_small_screen" class="col-12 pl-5 p-0 m-0 h6">תרגלת 8/8 מבחנים </span>
+        
         </div>
-      <span class="col h6  text-left">  תרגלת 8/8 מבחנים </span>
-    </div>
-
-        </div>
+        <div id="kamuti_list" style="display: none;"> 
+            <div
+              class="row border border-dark border-right-0 border-top-0 border-left-0  p-0 m-0 pb-4 pt-md-4 pr-md-3 pl-md-3"
+              style="display: flex; justify-content: space-between;">
+              <span> <i class="fa fa-file-text-o  fa-2x p-md-1" aria-hidden="true"
+                  style="border-radius: 6px; "></i>  קובץ הדרכה (קריאה) </span>
+              <button type="button" class="btn btn-danger " style="width: 100px">לקריאה</button>
+            </div>
+            <div class="row border border-dark border-right-0 border-top-0 border-left-0  p-0 m-0 pb-4 pt-md-4 pr-md-3 "
+                style="display: flex; justify-content: space-around;font-size: 19px">
+                <span  class="fa fa-check-circle-o fa-2x " aria-hidden="true"></span>
+                <span>חשבון: בעיות בחשבון (אחוזים) <br>
+                  הסקה כמותית רמה 1 גירסה 3
+                </span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button type="button" class="btn btn-outline-danger" style=" font-weight: bold; width: auto;">תרגל שוב</button>
+            </div>
+            <div class="row border border-dark border-right-0 border-top-0 border-left-0  p-0 m-0 pb-4 pt-md-4 pr-md-3 "
+              style="display: flex; justify-content: space-around;font-size: 19px">
+              <span  class="fa fa-check-circle-o fa-2x " aria-hidden="true"></span>
+              <span>חשבון: בעיות בחשבון (אחוזים) <br>
+                הסקה כמותית רמה 1 גירסה 3
+              </span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <button type="button" class="btn btn-outline-danger" style=" font-weight: bold; width: auto;">תרגל שוב</button>
+          </div>
       </div>
+  </div>
+</div>
 <!-- end right side ------------------------------------------------------------------------------------->
 
 
@@ -383,15 +415,6 @@
     </div>
 
   </div>
-
-
-
-
-
-
-
-
-
 
 
   <!--Footer-->
